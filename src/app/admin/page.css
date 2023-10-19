@@ -1,0 +1,93 @@
+.admin-page {}
+.admin-page h2 {
+    font-family: var(--font-jeko-bold);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2.31rem;
+}
+
+.admin-images-upload {
+    align-items: flex-start;
+    display: flex;
+    gap: 1.94rem;
+    overflow-x: auto;
+    position: relative;
+    padding-right: calc((100vw - 1133px) / 2);
+    padding-left: calc((100vw - 1133px) / 2);
+    margin-bottom: 2.31rem;
+}
+
+.admin-images-upload__item {
+    /* width: 20.8125rem;
+    height: 8.83113rem; */
+}
+
+
+.adm-img {
+    position: relative;
+    flex: none;
+    width: 20.8125rem;
+}
+.adm-img-sp {
+    position: relative;
+    flex: none;
+    width: 7.1875rem;
+}
+.adm-img--banner {
+    width: 20.8125rem;
+    height: 8.8125rem;
+    position: relative;
+    margin-bottom: 1.44rem;
+    border-radius: 0.875rem;
+    overflow: hidden;
+}
+
+.adm-img--sponsor {
+    width: 7.1875rem;
+    height: 7.1875rem;
+    position: relative;
+}
+
+.adm-img img {
+    width: 100%;
+    /* height: auto; */
+}
+
+.adm-form-wallet {
+    margin-bottom: 3rem;
+}
+
+.adm-form-social {
+    margin-bottom: 5rem;
+}
+
+.adm-form-social .form-inline {
+    margin-bottom: 1.31rem;
+}
+
+.adm-form-social .form-inline img {
+   
+}
+
+.adm-img .form-input {
+    margin-bottom: 0.75rem;
+}
+.adm-img--sponsor {
+    margin-bottom: 0.5rem;
+}
+
+.adm-img-sp .form-input {
+    height: 2.625rem;
+    padding: 0 0.7rem;
+}
+.adm-img-sp .btn {
+    height: 2.625rem;
+    padding: 0 0.7rem;
+}
+
+.adm-mg-wrapper {
+    width: 4.25rem;
+    margin-right: 4.25rem;
+}

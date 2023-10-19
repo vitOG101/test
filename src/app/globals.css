@@ -1,0 +1,232 @@
+@import 'reset-css';
+
+@import url(https://fonts.googleapis.com/css?family=Cherry+Bomb+One:regular);
+@font-face {
+  font-family: "Jeko Regular";
+  src: url("/fonts/Jeko/Jeko Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Jeko Bold";
+  src: url("/fonts/Jeko/Jeko Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Jeko Medium";
+  src: url("/fonts/Jeko/Jeko Medium.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Jeko Black";
+  src: url("/fonts/Jeko/Jeko Black.ttf") format("opentype");
+}
+
+:root {
+  --max-width: 1133px;
+  --border-radius: 1.0625rem;
+
+  --background-hex: #FFFEEB; 
+
+  --font-jeko-regular: 'Jeko Regular';
+  --font-jeko-bold: 'Jeko Bold';
+  --font-jeko-medium: 'Jeko Medium';
+  --font-jeko-black: 'Jeko Black';
+
+  --font-cherry-bomb-one: 'Cherry Bomb One';
+
+  --background-orange-rgb: 255, 171, 22;
+  --background-green-rgb: 34, 232, 54;
+  --background-yellow-rgb: 232, 213, 34;
+  --background-pink-rgb: 232, 94, 255;
+  --background-black-rgb: 0, 0, 0;
+  --background-grey-hex: #D9D9D9;
+  --background-grey-dark-hex: #4F4F4F;
+  --background-yellow-dark-hex: #C9C9BA;
+
+  --box-shadow: -7px -9px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+  --foreground-rgb: 0, 0, 0;
+
+  --font-size: 16px;
+
+  --color-white-hex: #FFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --foreground-rgb: 255, 255, 255; */
+    /* --background-hex: #000; */
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: var(--font-size) !important;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--background-hex);
+  font-family: var(--font-jeko-regular) !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    /* color-scheme: dark; */
+  }
+}
+
+.container {
+  width: var(--max-width);
+  margin: 0 auto;
+}
+
+.content-center {
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.btn {
+  border-radius: var(--border-radius);
+  color: #000;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: 0.4375rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border: none;
+  font-family: var(--font-jeko-regular);
+  /* width: 25.75rem; */
+  height: 3.3125rem;
+  padding: 0.56rem 6.31rem;
+}
+
+.form-input {
+  border-radius: 0.4375rem;
+  box-shadow: var(--box-shadow);
+  height: 3.3125rem;
+  background: #FFF;
+  border: none;
+  padding: 0 1.7rem;
+  font-family: var(--font-jeko-bold);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.form-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-inline input {
+  margin-right: 2.25rem;
+}
+
+.form-column input,
+.form-column button {
+  margin-bottom: 2.25rem;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+.btn-small {
+  height: 2.625rem;
+  padding: 0.88rem 8rem;
+  font-family: var(--font-jeko-medium);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn-orange {
+  background: rgb(var(--background-orange-rgb));
+}
+.btn-green {
+  background: rgb(var(--background-green-rgb));
+}
+.btn-yellow {
+  background: rgb(var(--background-yellow-rgb));
+}
+.btn-black {
+  background: rgb(var(--background-black-rgb));
+  color: var(--color-white-hex);
+}
+
+.btn-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 222;
+  cursor: pointer;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.mobile-warning {
+  display: none;
+}
+
+@media (max-width: 1133px) {
+  .mobile-warning {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: var(--background-hex);
+    z-index: 5555;
+    font-family: var(--font-jeko-bold);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .mobile-warning .logo {
+    position: absolute;
+    top: 40px;
+  }
+
+}

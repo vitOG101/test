@@ -1,0 +1,24 @@
+.block-text {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    max-width: 49.1875rem;
+    margin: 0 auto;
+}
+.block-text__content {
+    max-width: 32.1875rem;
+    
+}
+.block-text__title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: normal;
+    font-family: var(--font-jeko-bold);
+}
+.block-text__description {
+    font-size: 2rem;
+}
+.block-text__image {
+    width: 11.6875rem;
+    height: 11.6875rem;
+}

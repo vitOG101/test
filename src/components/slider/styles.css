@@ -1,0 +1,35 @@
+.slider {
+    margin-bottom: 3rem;
+    margin: 0 auto;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    max-width: 995px;
+}
+.slider .swiper {
+    padding-bottom: 2.7485rem;
+}
+
+.slider .swiper-pagination-bullet {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    background-color: var(--background-grey-hex);
+    opacity: 1;
+}
+
+.slider .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
+.slider .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 1.21875rem;
+}
+
+.slider .swiper-pagination-bullet-active {
+    background-color: var(--background-grey-dark-hex);
+}
+
+.slider img {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+    max-width: 62.1875rem;
+    max-height: 20.375rem;
+}

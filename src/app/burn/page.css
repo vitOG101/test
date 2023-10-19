@@ -1,0 +1,80 @@
+.burh-title {
+    font-size: 4rem;
+    font-family: var(--font-jeko-bold);
+}
+
+.burn-header {
+    width: 46.7rem;
+    margin: 0 auto;
+    padding-bottom: 2.94rem;
+}
+
+.burn-page h2 {
+    font-family: var(--font-jeko-bold);
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+}
+
+.burn-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.burn-page h3 {
+    font-family: var(--font-jeko-regular);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.burn-page form {
+    width: 46.7rem;
+    text-align: center;
+}
+
+.burn-page form .form-inline {
+    margin: 1.5rem 0 2.12rem 0;
+}
+
+.burn-page form input {
+    width: 100%;
+}
+
+.modal-container-ticket {
+    padding: 3rem;
+}
+
+.modal-container-ticket h2 {
+    color: var(--color-white-hex);
+    font-family: var(--font-jeko-bold);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.modal-container-ticket p {
+    color: rgb(var(--background-pink-rgb));
+    text-align: center;
+    text-shadow: 12px 9px 4px rgba(0, 0, 0, 0.25);
+    font-family: var(--font-cherry-bomb-one);
+    font-size: 14rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    top: -2rem;
+}
+
+.burn-burned {
+    width: 100%;
+    height: auto;
+}
+
+.modal-burned {
+    max-height: 684px;
+}

@@ -1,0 +1,12 @@
+.carousel {}
+.carousel h2 {
+    font-family: var(--font-jeko-bold);
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+.carousel .swiper {
+    margin: 1.37rem 0 2.75rem 0;
+}
